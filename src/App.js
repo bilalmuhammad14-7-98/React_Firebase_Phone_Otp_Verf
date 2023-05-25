@@ -69,7 +69,7 @@ const App = () => {
   }
 
   return (
-    <section className="bg-emerald-500 flex items-center justify-center h-screen">
+    <section className="bg-blue-500 flex items-center justify-center h-screen">
       <div>
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
@@ -126,7 +126,7 @@ const App = () => {
                 <PhoneInput country={"in"} value={ph} onChange={setPh} />
                 <button
                   onClick={onSignup}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="bg-yellow-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
