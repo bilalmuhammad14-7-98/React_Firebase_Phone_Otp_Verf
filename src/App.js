@@ -48,7 +48,8 @@ const App = () => {
         toast.success("OTP sended successfully!");
       })
       .catch((error) => {
-        console.log(error);
+        toast.error("Too many request");
+        console.log(error, "error");
         setLoading(false);
       });
   }
@@ -63,7 +64,8 @@ const App = () => {
         setLoading(false);
       })
       .catch((err) => {
-        console.log(err);
+        toast.error("Too many request");
+        console.log(err, "err");
         setLoading(false);
       });
   }
